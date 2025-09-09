@@ -1,7 +1,7 @@
 # Get It Done
 
 A simple, modern to-do app built with **Next.js (App Router)**, **tRPC**, **Prisma**, **Tailwind**, and **GitHub OAuth**.  
-Locally it uses **Postgres in Docker**; in production it uses **Railway** (DB) + **Vercel** (hosting).
+Locally it uses **Postgres in Docker**; in production it uses **Railway** (DB) + **Vercel** (hosting): https://get-it-done-sand.vercel.app
 
 ## What it does
 - **Auth-gated landing**: Home page prompts “Sign in with GitHub”.  
