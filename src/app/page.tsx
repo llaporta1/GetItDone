@@ -273,11 +273,8 @@ function TaskRow(props: {
 function SkeletonRows() {
   return (
     <div className="space-y-2">
-      {[...Array(3)].map((_, i) => (
-        <div
-          key={i}
-          className="h-12 animate-pulse rounded-2xl border border-white/12 bg-white/10"
-        />
+      {Array.from({ length: 3 }).map((_, i) => (
+        <div key={i} className="h-12 animate-pulse rounded-2xl border border-white/12 bg-white/10" />
       ))}
     </div>
   );
