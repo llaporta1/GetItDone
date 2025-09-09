@@ -9,7 +9,6 @@ const RenameInput  = z.object({ id: z.string(), text: z.string().min(1) });
 const RemoveInput  = z.object({ id: z.string() });
 
 export const taskRouter = createTRPCRouter({
-  // Read
   list: publicProcedure
     .input(ListInput)
     .query(async ({ ctx, input }) => {
@@ -24,7 +23,6 @@ export const taskRouter = createTRPCRouter({
       });
     }),
 
-  // Create
   create: publicProcedure
     .input(CreateInput)
     .mutation(async ({ ctx, input }) => {
@@ -34,7 +32,6 @@ export const taskRouter = createTRPCRouter({
       });
     }),
 
-  // Update: toggle done
   toggle: publicProcedure
     .input(ToggleInput)
     .mutation(async ({ ctx, input }) => {
@@ -44,7 +41,6 @@ export const taskRouter = createTRPCRouter({
       });
     }),
 
-  // Update
   rename: publicProcedure
     .input(RenameInput)
     .mutation(async ({ ctx, input }) => {
