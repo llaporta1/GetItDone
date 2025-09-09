@@ -28,3 +28,7 @@ Locally it uses **Postgres in Docker**; in production it uses **Railway** (DB) +
 ### 1) Install
 ```bash
 npm i
+# or
+pnpm i
+# or
+yarn
