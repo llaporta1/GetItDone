@@ -1,6 +1,6 @@
 # Get It Done
 
-A tiny, polished to-do app built with **Next.js (App Router)**, **tRPC**, **Prisma**, **Tailwind**, and **GitHub OAuth**.  
+A simple, modern to-do app built with **Next.js (App Router)**, **tRPC**, **Prisma**, **Tailwind**, and **GitHub OAuth**.  
 Locally it uses **Postgres in Docker**; in production it uses **Railway** (DB) + **Vercel** (hosting).
 
 ## What it does
